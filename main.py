@@ -1,7 +1,7 @@
 import os
 from PyQt6.QtWidgets import QApplication
-from controllers.sensor_controller import SensorDataController
 
+from controllers.sensor_controller import SensorDataController
 from views.sensor_view import SensorView
 
 file_path = (os.path.dirname(__file__)) + \

@@ -1,6 +1,6 @@
+import os
 import unittest
 from models.sensor import SensorData
-import os
 
 
 class TestSensorModel(unittest.TestCase):

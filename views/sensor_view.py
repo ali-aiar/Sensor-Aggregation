@@ -1,6 +1,6 @@
+import os
 from PyQt6.QtWidgets import QMainWindow,  QTableWidgetItem
 from PyQt6 import uic, QtCore
-import os
 
 
 class SensorView(QMainWindow):
@@ -22,7 +22,6 @@ class SensorView(QMainWindow):
         self.tableWidget.setColumnWidth(7, 150)
         self.tableWidget.setColumnWidth(8, 150)
         self.tableWidget.setColumnWidth(9, 150)
-        # self.lineEdit.textChanged.connect(self.on_search_changes)
         self.create_table(sensor_data)
 
     def create_table(self, sensor_data):
@@ -67,17 +66,3 @@ class SensorView(QMainWindow):
         item.setTextAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
         return item
 
-    # def on_search_changes(self):
-    #     search_text = self.lineEdit.text()
-    #     if not search_text:
-    #         for i in range(self.tableWidget.rowCount()):
-    #             self.tableWidget.setRowHidden(i, False)
-    #         return
-    #     for i in range(self.tableWidget.rowCount()):
-    #         hide_row = True
-    #         for j in range(self.tableWidget.columnCount()-5):
-    #             item = self.tableWidget.item(i, j)
-    #             if item and search_text in item.text():
-    #                 hide_row = False
-    #                 break
-    #         self.tableWidget.setRowHidden(i, hide_row)

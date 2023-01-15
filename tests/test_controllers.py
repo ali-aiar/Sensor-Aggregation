@@ -1,5 +1,5 @@
-import unittest
 import os
+import unittest
 from controllers.sensor_controller import SensorDataController
 
 
@@ -16,4 +16,3 @@ class TestSensorController(unittest.TestCase):
         self.assertEqual(
             grouped_data['roomArea1_2020-07-02']['day'], '2020-07-02')
         self.assertIsNotNone(grouped_data)
-
