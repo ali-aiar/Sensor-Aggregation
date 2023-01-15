@@ -15,7 +15,7 @@ git clone https://github.com/ali-aiar/Sensor-Aggregation.git
 ```
 2. Go to the main directory 
 ```bash
-cd Salary-Conversion
+cd Sensor-Aggregation
 ```
 3. Create a virtual environment 
 ```bash
